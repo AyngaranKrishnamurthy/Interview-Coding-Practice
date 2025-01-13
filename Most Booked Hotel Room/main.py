@@ -12,7 +12,7 @@ class Solution(object):
                 list2.append(strval)
 
         counter = Counter(list2)
-        res, _ = counter.most_common(1)[0]
+        res = counter.most_common(1)[0]
         return res
     
 solution = Solution()
