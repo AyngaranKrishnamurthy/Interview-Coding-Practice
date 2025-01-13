@@ -1,5 +1,5 @@
 keyboard = "abcdefghijklmnopqrstuvwxy"
-text = "cba" 
+text = "leetcode" 
 
 class Solution:
     def TimeToTypeString(self, keyboard:str, text: str) -> int:
@@ -11,12 +11,10 @@ class Solution:
         for i in range(len(text)):
             for j in range(len(listk)):
                 if listt[i] == listk[j]:            
-                    if current < j:
-                        current = j - current
-                    else:
-                        current = current - j
-                    time+=current
+                    time += abs(j - current)
+                    current = j 
+                    break
         return time
                 
 solution=Solution()
-print(solution.TimeToTypeString(keyboard,text))
+print(solution.TimeToTypeString(keyboard,text)) 
