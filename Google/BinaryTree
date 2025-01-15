@@ -1,8 +1,10 @@
-1. Define a class Node with object as the argument:
+1. Tree Node
+    Define a class Node with object as the argument:
     a. Define init method with arguments = self, val,left, right
     b. Set self.args = args
 
-2. Define a method called Binary Tree with list as the argument:
+2. Binary Tree
+    Define a method called Binary Tree with list as the argument:
     a. Check is list does not exist or is empty, if true return None
     
     b. Assign root by calling Node class (Root will always be the first value of the list)
@@ -18,3 +20,28 @@
     j. Increment index
 
     k. Set condition that if the list item at current index exists then execute
+    l. Set the right child of current node is the value at current index on the list
+    m. Append the left child to the queue
+    n. Increment index
+
+    o. return root
+
+3. Breadth First Search:
+    a. Define a bfs method with root as the argument (as we return root as the result of binary tree)
+    b. Check if root exists, if not return None
+    
+    c. Assign a empty list result
+    d. Create a list called queue, containing root
+
+    e. Create a condition while queue is not null
+    f. Initialize a list called level
+    g. Create a for loop to traverse over the range of length of queue
+    h. Create a variable node and add root(first value of queue)
+    i. If node exists execute
+    j. Append value of node to level
+    k. Append left child of node to queue
+    l. Append right child of node to queue
+    j. if level exists execute
+    k. Append level to result
+    l. return result to be printed
+

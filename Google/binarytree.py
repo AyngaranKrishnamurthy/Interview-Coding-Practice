@@ -22,7 +22,7 @@ def BinaryTree(list_name):
         index +=1
 
         #Check if there is right child and assign
-        if index<len(list_name) and list_name[index] is not None:
+        if list_name[index] is not None:
             current.right = Node(list_name[index])
             queue.append(current.right)
         index+=1
