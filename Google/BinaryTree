@@ -1,0 +1,20 @@
+1. Define a class Node with object as the argument:
+    a. Define init method with arguments = self, val,left, right
+    b. Set self.args = args
+
+2. Define a method called Binary Tree with list as the argument:
+    a. Check is list does not exist or is empty, if true return None
+    
+    b. Assign root by calling Node class (Root will always be the first value of the list)
+    c. Create a list called queue with root as a value
+    d. Create an index with initial value 1, as value at index 0 of list is already set to root
+
+    e. Set a condition while queue is not empty and index is less than length of list_name
+    f. Assign variable current = queue.pop(0), which is root value
+    
+    g. Set condition that if the list item at current index exists then execute
+    h. Set the left child of current node is the value at current index on the list
+    i. Append the left child to the queue
+    j. Increment index
+
+    k. Set condition that if the list item at current index exists then execute
