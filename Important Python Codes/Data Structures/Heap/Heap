@@ -1,0 +1,4 @@
+A heap is a special type of binary tree-based data structure that satisfies the heap property. It is commonly used to implement priority queues and is efficient for operations like finding the maximum or minimum element.
+There are two types of heaps:
+    Max-Heap: In a max-heap, the parent node is always greater than or equal to its children. The maximum value is at the root.
+    Min-Heap: In a min-heap, the parent node is always smaller than or equal to its children. The minimum value is at the root.
