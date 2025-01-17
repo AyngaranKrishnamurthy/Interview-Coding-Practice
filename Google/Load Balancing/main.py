@@ -6,15 +6,16 @@ class Solution(object):
         res2=0
         list1=[]
         list2=[]
+        load.sort(reverse=True)
         for i in load:
             if res1 <= res2:
-                list1.append(load[i])
-                res1 +=1
+                list1.append(i)
+                res1 +=i
             else:
-                list2.append(load[i])
-                res2+=1
-        res = res2-res1
+                list2.append(i)
+                res2+=i
+        res = abs(res2-res1)
         
         return res
-solution=Solution
+solution=Solution()
 print(solution.loadDifference(load))
