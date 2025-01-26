@@ -23,6 +23,3 @@ print("5. Largest Element popped out from the list:", largest)
 
 peek_largest = -maxheap[0]
 print("6. Peek the largest element of the heap:", peek_largest)
-
-
-#######
