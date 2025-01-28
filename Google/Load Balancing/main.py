@@ -1,6 +1,6 @@
 load = [1, 2, 3, 4, 5]
 class Solution(object):
-    def loadDifference(self, load: list[int]) -> int:
+    def loadDifference(self, load: list[int]) -> int: #G
         res = 0
         res1=0
         res2=0
