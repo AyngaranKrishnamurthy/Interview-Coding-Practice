@@ -19,4 +19,3 @@ class Solution(object):
         return res
 solution=Solution()
 print(solution.loadDifference(load))
-####
